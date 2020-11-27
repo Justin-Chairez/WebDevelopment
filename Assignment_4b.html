@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 4b</title>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="/js/assignment4script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <div data-role="content">
+    <input type="number" name="numfield" id="numfield" placeholder="Enter a number here">
+    <label id="unit" for="numfield">Inches</label>
+
+    <p>Convert to:</p>
+    <form>
+      <fieldset data-role="controlgroup" data-type="horizontal">
+        <input type="radio" name="unitsradio" id="inches" value="val1" onclick="changeUnitsCentimeters()">
+        <label for="inches">Inches</label>
+
+        <input type="radio" name="unitsradio" id="centimeters" value="val2" checked = "checked" onclick="changeUnitsInches()">
+        <label for="centimeters">Centimeters</label>
+      </fieldset>
+    </form>
+
+    <button onclick="display()">Convert</button>
+    <p id="output"></p>
+  </div>
+</body>
+</html>

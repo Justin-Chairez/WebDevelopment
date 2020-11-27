@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script type="text/javascript" src="/js/assignment7script.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Texting Tutor App</h1>
+    </div>
+
+    <div data-role="content">
+      <form>
+        <fieldset data-role="controlgroup" data-type="horizontal">
+          <input type="radio" name="levelRadio" id="beginner" value="val1" checked="checked" onclick="textLevel(this.id)">
+          <label for="beginner">Beginner</label>
+
+          <input type="radio" name="levelRadio" id="advanced" value="val2" onclick="textLevel(this.id)">
+          <label for="advanced">Advanced</label>
+        </fieldset>
+      </form>
+
+      <input type="button" class="btn" id="startTest" value="Click this button to start a test" onclick="generateText()">
+
+      <h3>The text you will type will appear here:</h3>
+      <p id="outputText"></p>
+
+      <h3>Enter Your Text here:</h3>
+      <input type="text" id="userText">
+
+      <input type="button" class="btn" id="endTest" value="Click this button when you are done typing." onclick="checkText()">
+      <p id="imageResult"></p>
+      <p id="testResult"></p>
+</body>
+</html>

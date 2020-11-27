@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 5</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel = "stylesheet" href = "/css/ass5_stylesheet.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="/js/assignment5script.js"></script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1> Monty Hall Game</h1>
+      <h3>A car prize is behind one of the doors</h3>
+    </div>
+
+    <div data-role="content">
+      <div class="row">
+        <div class="col-sm-12">
+          <p id="output">Please pick a door</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <button id="1" onclick="playGame(this.id)">
+            <img id="door1Image" src="/Media/door1.png" alt="door1">
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button id="2" onclick="playGame(this.id)">
+            <img id="door2Image" src="/Media/door2.png" alt="door2">
+          </button>
+        </div>
+        <div class="col-sm-4">
+          <button id="3" onclick="playGame(this.id)">
+            <img id="door3Image" src="/Media/door3.png" alt="door3">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="footer">
+      <small><i>Mobile App</i><small>
+    </div>
+  </div>
+</body>
+
+</html>

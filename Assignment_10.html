@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 10</title>
+  <meta charset="utf-8">
+  <script src="/js/assignment10script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Culinary Quiz</h1>
+  <h3>Select a category of culinary terms</h3>
+  <!-- Creates a selection menu for different quiz options -->
+  <select id="categories">
+    <option value="0">Food</option>
+    <option value="1">Beverage</option>
+    <option value="2">Condiment</option>
+  </select>
+  <br><br>
+  <!-- On click creates a quiz -->
+  <button onclick="printTerms();">Build a question</button>
+  <h2 id="outputQuestion"></h2>
+  <div id="questionButtons"></div>
+  <p id="answer"></p>
+</body>
+</html>
